@@ -8,7 +8,6 @@ app.innerHTML = `
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="/logo.jpg" alt="Flomino Logo" class="leaf-icon">
           <span class="logo-text">Flomino</span>
         </div>
         
@@ -21,11 +20,15 @@ app.innerHTML = `
         
         <div class="header-right">
           <div class="language-selector">
-            <span class="globe-icon">🌐</span>
-            <span>Eng</span>
-            <span class="arrow">▼</span>
+            <div class="language-frame">
+              <img src="/src/assets/icons/hugeicons_internet.png" alt="Language" class="globe-icon">
+              <span class="language-text">Eng</span>
+            </div>
+            <img src="/Vector-2.png" alt="Dropdown" class="arrow">
           </div>
-          <button class="contact-btn">Contact</button>
+          <button class="contact-btn">
+            <span class="contact-btn-text">Contact</span>
+          </button>
         </div>
       </div>
     </div>
@@ -38,7 +41,7 @@ app.innerHTML = `
         <div class="hero-text">
           <h1 class="hero-title">Join the green mission, play for a better planet.</h1>
           <p class="hero-subtitle">Turn your daily actions into real environmental impact - complete eco-tasks, earn points, and help plant trees with Flomino.</p>
-          <button class="cta-btn">Daha çox öyrən</button>
+          <button class="cta-btn">Learn more</button>
         </div>
         
         <div class="hero-visual">
@@ -199,18 +202,26 @@ app.innerHTML = `
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-left">
+    <div class="footer-container">
+      <!-- Main Footer Content -->
+      <div class="footer-main">
+        <div class="footer-brand">
           <div class="footer-logo">
-            <img src="/logo.jpg" alt="Flomino Logo" class="leaf-icon">
             <span class="logo-text">Flomino</span>
           </div>
           <div class="social-icons">
-            <a href="#" class="social-icon">📷</a>
-            <a href="#" class="social-icon">💼</a>
-            <a href="#" class="social-icon">📘</a>
-            <a href="#" class="social-icon">🐦</a>
+            <a href="#" class="social-icon">
+              <img src="/src/assets/icons/ri_instagram-fill.png" alt="Instagram" class="social-logo">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="/src/assets/icons/mdi_linkedin.png" alt="LinkedIn" class="social-logo">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="/src/assets/icons/ic_baseline-facebook.png" alt="Facebook" class="social-logo">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="/src/assets/icons/streamline-logos_x-twitter-logo-block.png" alt="Twitter" class="social-logo">
+            </a>
           </div>
         </div>
         
@@ -255,17 +266,25 @@ app.innerHTML = `
               <li><a href="#">Become a Partner</a></li>
             </ul>
           </div>
-  </div>
-        
-        <div class="footer-contact">
-          <div class="contact-info">
-            <p><strong>Phone:</strong> +994 123 45 67</p>
-            <p><strong>Email:</strong> contactemailkdkjdoijdoqj</p>
-            <p><strong>Address:</strong> contactemailkdkjdoijdoqj</p>
-          </div>
         </div>
       </div>
       
+      <!-- Separator Line -->
+      <div class="footer-separator"></div>
+      
+      <!-- Contact Information -->
+      <div class="footer-contact">
+        <div class="contact-item">
+          <h5>Phone</h5>
+          <p>010 423 00 01</p>
+        </div>
+        <div class="contact-item email-right">
+          <h5>Email</h5>
+          <p>infokamalpashayev@gmail.com</p>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
       <div class="footer-bottom">
         <p>&copy; 2025 Flomino. All rights reserved.</p>
       </div>
